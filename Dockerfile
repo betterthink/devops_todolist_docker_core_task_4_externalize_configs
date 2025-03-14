@@ -16,6 +16,7 @@ ENV PYTHONUNBUFFERED=1
 
 COPY --from=builder /app .
 
+
 RUN pip install --upgrade pip && \
     pip install -r requirements.txt
 
